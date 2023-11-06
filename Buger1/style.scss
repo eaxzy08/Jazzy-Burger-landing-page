@@ -1,0 +1,1061 @@
+@use "./utilities" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.Hero{
+    width: 100%;
+    max-width: 1440;
+    margin: 0 auto;
+}
+
+//    NAV
+.Nav1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+}
+// FIRST NAV
+.First-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.jazzy {
+  height: 80px;
+  width: 80px;
+}
+
+.location {
+  width: 22px;
+  height: 27px;
+  // flex-shrink: 0;
+}
+
+.First-nav2 {
+  display: flex;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+#First-nav3 {
+  color: var(--Red, #f31d1d);
+  margin-top: .4rem;
+  // display: flex;
+  // align-items: center;
+
+  /* Header 1 */
+  font-family: Open Sans;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+// SECOND NAV
+.Second-nav3 {
+  display: flex;
+  gap: 1rem;
+  color: $red;
+}
+
+.nav-hov:hover{
+     border-bottom:3px solid #f31d1d;
+}
+.Second-nav2 {
+  display: flex;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+.Second-nav2 img {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+//  Media query for nav
+@media (max-width: 425px) {
+  .First-nav2 {
+    display: none;
+  }
+  .Second-nav3 p {
+    display: none;
+  }
+
+  .arrow-down {
+    display: none;
+  }
+
+  .Nav1 {
+    padding: 1rem 2rem;
+  }
+}
+ 
+
+header img {
+  width: 100%;
+  padding: 1rem 5rem;
+  width: 100%;
+}
+@media (max-width: 425px) {
+    header img {
+      width: 100%;
+      padding: 0.5rem 2rem;
+    }
+    
+  }
+
+//   MAIN
+
+.Main1 {
+  width: 100%;
+  border: 2px solid whitesmoke;
+  // width: 16.1rem;
+  border-radius: 20px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.82);
+}
+
+.add-icon {
+  display: flex;
+}
+.naira {
+  display: flex;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+}
+
+.naira p {
+  color: #000;
+
+  font-family: Open Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.naira img {
+  height: 20px;
+  margin-top: 4px;
+}
+
+.ttl {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1rem;
+}
+
+.ingridients {
+  display: flex;
+  padding-left: 1rem;
+  // gap: .3rem;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.Fav1 {
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
+.Burger-container1 {
+  position: relative;
+}
+
+.Add-to-cart {
+  display: flex;
+  align-items: center;
+  border: 1px solid $red;
+  border-style: none;
+  border-top: 2rem;
+  background-color: $red;
+  width: 238px;
+  padding: 0.5rem 2rem;
+  gap: 1rem;
+  border-radius: 10px;
+  margin-left: 0.6rem;
+}
+
+.Add-to-cart p {
+  font-size: 24px;
+  font-family: Open Sans;
+  color: $white;
+}
+
+.Text {
+  font-family: Open sans;
+  font-size: bold;
+  font-style: normal;
+  font-weight: 600;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+.Total {
+  color: #878787;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-family: Open Sans;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Main1-image {
+  margin-top: 1rem;
+}
+
+@media (max-width: 425px) {
+  .Main {
+    display: none;
+
+    .Main1 {
+        width: 22rem;
+      }
+     
+    
+      .Burger1 {
+        width: 22rem;
+      }
+    
+      .Add-to-cart{
+        width: 20.5rem;
+        display: flex;
+        justify-content: center;
+    }
+  }
+//   header img {
+//     width: 100%;
+//     padding: 0.5rem 2rem;
+//   }
+  
+}
+
+// MAIN 2
+.Main2 {
+    width: 100%;
+    border: 2px solid whitesmoke;
+    // width: 16.1rem;
+    border-radius: 20px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+  
+  .add-icon2 {
+    display: flex;
+  }
+  .naira2 {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .naira2 p {
+    color: #000;
+  
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .naira2 img {
+    height: 20px;
+    margin-top: 4px;
+  }
+  
+  .ttl2 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+  
+  .ingridients2 {
+    display: flex;
+    padding-left: 1rem;
+    // gap: .3rem;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .Fav2 {
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
+  .Burger-container2 {
+    position: relative;
+  }
+  
+  .Add-to-cart2 {
+    display: flex;
+    align-items: center;
+    border: 1px solid $red;
+    border-style: none;
+    border-top: 2rem;
+    background-color: $red;
+    width: 238px;
+    padding: 0.5rem 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+  }
+  
+  .Add-to-cart2 p {
+    font-size: 24px;
+    font-family: Open Sans;
+    color: $white;
+  }
+  
+  .Text2 {
+    font-family: Open sans;
+    font-size: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .Total2 {
+    color: #878787;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .Main2-image {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 425px) {
+  
+  
+      .Main2 {
+          width: 22rem;
+        }
+     
+      
+        .Burger2 {
+          width: 22rem;
+        }
+      
+        .Add-to-cart2{
+          width: 20.5rem;
+          display: flex;
+          justify-content: center;
+      }
+    }
+
+// MAIN 3
+
+
+.Main3 {
+    width: 100%;
+    border: 2px solid whitesmoke;
+    // width: 16.1rem;
+    border-radius: 20px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+  
+  .add-icon3 {
+    display: flex;
+  }
+  .naira3 {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .naira3 p {
+    color: #000;
+  
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .naira3 img {
+    height: 20px;
+    margin-top: 4px;
+  }
+  
+  .ttl3 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+  
+  .ingridients3 {
+    display: flex;
+    padding-left: 1rem;
+    // gap: .3rem;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .Fav3 {
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
+  .Burger-container3 {
+    position: relative;
+  }
+  
+  .Add-to-cart3 {
+    display: flex;
+    align-items: center;
+    border: 1px solid $red;
+    border-style: none;
+    border-top: 2rem;
+    background-color: $red;
+    width: 238px;
+    padding: 0.5rem 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+  }
+  
+  .Add-to-cart3 p {
+    font-size: 24px;
+    font-family: Open Sans;
+    color: $white;
+  }
+  
+  .Text3 {
+    font-family: Open sans;
+    font-size: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .Tota3 {
+    color: #878787;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .Main3-image {
+    margin-top: 1rem;
+  }
+
+
+  @media (max-width: 425px) {
+  
+  
+    .Main3 {
+        width: 22rem;
+      }
+    
+    
+      .Burger3 {
+        width: 22rem;
+      }
+    
+      .Add-to-cart3{
+        width: 20.5rem;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+
+// MAIN 4
+
+.Main4 {
+    width: 100%;
+    border: 2px solid whitesmoke;
+    // width: 16.1rem;
+    border-radius: 20px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+  
+  .add-icon4 {
+    display: flex;
+  }
+  .naira4 {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .naira4 p {
+    color: #000;
+  
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .naira4 img {
+    height: 20px;
+    margin-top: 4px;
+  }
+  
+  .ttl4 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+  
+  .ingridients4 {
+    display: flex;
+    padding-left: 1rem;
+    // gap: .3rem;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .Fav4 {
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
+  .Burger-container4 {
+    position: relative;
+  }
+  
+  .Add-to-cart4 {
+    display: flex;
+    align-items: center;
+    border: 1px solid $red;
+    border-style: none;
+    border-top: 2rem;
+    background-color: $red;
+    width: 238px;
+    padding: 0.5rem 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+  }
+  
+  .Add-to-cart4 p {
+    font-size: 24px;
+    font-family: Open Sans;
+    color: $white;
+  }
+  
+  .Text4 {
+    font-family: Open sans;
+    font-size: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .Total4 {
+    color: #878787;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .Main4-image {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 425px) {
+  
+  
+    .Main4 {
+        width: 22rem;
+      }
+     
+    
+      .Burger4 {
+        width: 22rem;
+      }
+    
+      .Add-to-cart4{
+        width: 20.5rem;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+
+// MAIN 5
+.Main5 {
+    width: 100%;
+    border: 2px solid whitesmoke;
+    // width: 16.1rem;
+    border-radius: 20px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+  
+  .add-icon5 {
+    display: flex;
+  }
+  .naira5 {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .naira5 p {
+    color: #000;
+  
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .naira5 img {
+    height: 20px;
+    margin-top: 4px;
+  }
+  
+  .ttl5 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+  
+  .ingridients5 {
+    display: flex;
+    padding-left: 1rem;
+    // gap: .3rem;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .Fav5 {
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
+  .Burger-container5 {
+    position: relative;
+  }
+  
+  .Add-to-cart5 {
+    display: flex;
+    align-items: center;
+    border: 1px solid $red;
+    border-style: none;
+    border-top: 2rem;
+    background-color: $red;
+    width: 238px;
+    padding: 0.5rem 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+  }
+  
+  .Add-to-cart5 p {
+    font-size: 24px;
+    font-family: Open Sans;
+    color: $white;
+  }
+  
+  .Text5 {
+    font-family: Open sans;
+    font-size: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .Total5 {
+    color: #878787;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .Main5-image {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 425px) {
+  
+  
+    .Main5 {
+        width: 22rem;
+      }
+    
+    
+      .Burger5 {
+        width: 22rem;
+      }
+    
+      .Add-to-cart5{
+        width: 20.5rem;
+        display: flex;
+        justify-content: center;
+    }
+  }
+  
+
+// MAIN 6
+.Main6 {
+    width: 100%;
+    border: 2px solid whitesmoke;
+    // width: 16.1rem;
+    border-radius: 20px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.82);
+  }
+  
+  .add-icon6 {
+    display: flex;
+  }
+  .naira6 {
+    display: flex;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+  
+  .naira6 p {
+    color: #000;
+  
+    font-family: Open Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  .naira6 img {
+    height: 20px;
+    margin-top: 4px;
+  }
+  
+  .ttl6 {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+  }
+  
+  .ingridients6 {
+    display: flex;
+    padding-left: 1rem;
+    // gap: .3rem;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .Fav6 {
+    position: absolute;
+    top: 0;
+    right: 0%;
+  }
+  .Burger-container6 {
+    position: relative;
+  }
+  
+  .Add-to-cart6 {
+    display: flex;
+    align-items: center;
+    border: 1px solid $red;
+    border-style: none;
+    border-top: 2rem;
+    background-color: $red;
+    width: 238px;
+    padding: 0.5rem 2rem;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-left: 0.6rem;
+  }
+  
+  .Add-to-cart6 p {
+    font-size: 24px;
+    font-family: Open Sans;
+    color: $white;
+  }
+  
+  .Text6 {
+    font-family: Open sans;
+    font-size: bold;
+    font-style: normal;
+    font-weight: 600;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .Total6 {
+    color: #878787;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: Open Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .Main6-image {
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 425px) {
+  
+  
+    .Main6 {
+        width: 22rem;
+      }
+     .Burger6 {
+        width: 22rem;
+      }
+    
+      .Add-to-cart6{
+        width: 20.5rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+  }
+  
+
+.Top1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
+}
+
+@media (max-width: 425px) {
+  .Top1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    // padding: 1rem 2rem;
+    // padding: 0rem 0rem;
+  }
+  .Top-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+  }
+
+  .Main1 {
+    width: 22rem;
+  }
+
+
+  .Burger1 {
+    width: 22rem;
+  }
+  .Add-to-cart{
+    width: 20.5rem;
+}
+}
+
+.Top-main {
+  display: flex;
+  padding: 1rem 5rem;
+  gap: 3.5rem;
+}
+
+
+
+// FOOTER
+footer {
+  background-color: $black;
+  color: $white;
+  height: 70vh;
+}
+.First-footer-div {
+  display: flex;
+  gap: 2rem;
+}
+.First-footer-div img {
+  width: 80px;
+  height: 70px;
+}
+
+.div1 {
+  display: flex;
+  gap: 1rem;
+}
+
+.div1 p {
+  margin-top: 5px;
+}
+
+.p1 {
+  font-size: 17px;
+  white-space: nowrap;
+}
+
+span {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.Footer-p {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 25.49px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Footer-p2 {
+  color: #fff;
+  font-family: Open Sans;
+  font-size: 14.49px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.Applestore {
+  display: flex;
+  border: 2px solid $white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  gap: 8px;
+}
+
+.Playstore {
+  display: flex;
+  border: 2px solid $white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  gap: 8px;
+}
+
+.Second-footer-div {
+  display: flex;
+  gap: 2rem;
+}
+.Download {
+  display: flex;
+}
+.issa {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5rem;
+}
+
+.Service {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 5rem;
+  margin-top: 3rem;
+}
+
+.Service a:hover {
+   color: #f31d1d;
+}
+
+.Follow-us {
+  display: block;
+  gap: 2rem;
+  padding: 3rem 5rem;
+}
+
+.Follow-us img {
+  display: inline-flex;
+  margin: 5px;
+}
+
+@media (max-width: 425px) {
+  .First-footer-div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Second-footer-div {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 20px;
+  }
+
+  .Applestore {
+    padding: 0.5rem 0.5rem;
+    width: fit-content;
+  }
+
+  .Playstore {
+    padding: 0.5rem 0rem;
+    width: fit-content;
+    // padding-left: 5px;
+  }
+
+  footer {
+    height: auto;
+    text-align: center;
+  }
+  .issa {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Follow-us img {
+    // display: inline-flex;
+    margin: 0;
+  }
+
+  .Follow-us img:hover{
+    color: $red;
+    background-color: #f31d1d;
+  }
+
+  .div1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .Service {
+    margin-top: 0;
+  }
+
+  .Service a:hover{
+    color: #f31d1d;
+  }
+}
